@@ -12,4 +12,13 @@
 function play(){
     hideElement('home')
     showElement('play-ground')
+continueGame();
+}
+
+function continueGame(){
+const alphabet=getAlphabet();
+// console.log("Your random alphabet",alphabet);
+const currentAlphabet=document.getElementById("current-alphabet");
+currentAlphabet.innerText=alphabet;
+addBackgroundColor(alphabet);
 }
