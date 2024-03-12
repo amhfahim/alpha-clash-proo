@@ -13,6 +13,11 @@ function addBackgroundColor(elementId){
    
 }
 
+function removeBackground(elementId){
+const element=document.getElementById(elementId);
+element.classList.remove("bg-orange-400");
+}
+
 function getAlphabet(){
     const alphabetStr="abcdefghijklmnopqrstuvwxyz";
     const alphabets= alphabetStr.split('');
@@ -24,3 +29,8 @@ const alphabet=alphabets[index]
     // console.log(alphabets);
     return alphabet;
 } 
+
+function getElementTextById(elementId){
+const element=document.getElementById(elementId)
+const text=element.innerText;
+return text;}
